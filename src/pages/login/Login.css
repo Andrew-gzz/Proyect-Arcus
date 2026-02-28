@@ -1,0 +1,20 @@
+.arcus-input {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid #6c757d !important; /* línea gris */
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.arcus-input:focus {
+  outline: none !important;
+  box-shadow: none !important; /* quita el glow azul de bootstrap */
+  border-bottom-color: #adb5bd !important; /* línea un poco más clara al focus */
+}
+
+.arcus-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
