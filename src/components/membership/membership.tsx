@@ -49,19 +49,19 @@ export default function Membership() {
       title: "START",
       subtitle: "Diseñado para empezar tu negocio",
       img: "src/assets/Membership1.png",
-      buttonColor: "#39B54A",
+      buttonColor: "#47B921",
     },
     {
       title: "SELECT",
       subtitle: "El plan que todo Arcade necesita",
       img: "src/assets/Membership2.png",
-      buttonColor: "#2B2DE2",
+      buttonColor: "#271DD6",
     },
     {
       title: "BONUS",
       subtitle: "Experiencias más allá del premium",
       img: "src/assets/Membership3.png",
-      buttonColor: "#E73124",
+      buttonColor: "#F31919",
     },
   ];
 
@@ -99,102 +99,103 @@ export default function Membership() {
               Aumenta el nivel de tu Arcade
             </p>
           </div>
-
-          {/* Panel de beneficios */}
-          <div
-            className="rounded-4 p-4 mt-5"
-            style={{
-              backgroundColor: "rgba(24, 92, 120, 0.95)",
-              boxShadow: "0 12px 30px rgba(0,0,0,.35)",
-            }}
-          >
-            <div className="row g-4 align-items-center">
-              <div className="col-12 col-md-4">
-                <div className="d-flex gap-3 align-items-start">
-                  <div
-                    className="d-flex align-items-center justify-content-center rounded-3"
-                    style={{
-                      width: 46,
-                      height: 46,
-                      backgroundColor: "rgba(255,255,255,.08)",
-                      color: "#E9F400",
-                      fontSize: 26,
-                      flex: "0 0 auto",
-                    }}
-                  >
-                    ⏫
+        </div>
+      </section>
+      <div className="container my-4">
+        {/* Panel de beneficios */}
+        <div
+          className="rounded-4 p-4 mt-5"
+          style={{
+            backgroundColor: "rgba(24, 92, 120, 0.95)",
+            boxShadow: "0 12px 30px rgba(0,0,0,.35)",
+          }}
+        >
+          <div className="row g-4 align-items-center">
+            <div className="col-12 col-md-4">
+              <div className="d-flex gap-3 align-items-start">
+                <div
+                  className="d-flex align-items-center justify-content-center rounded-3"
+                  style={{
+                    width: 46,
+                    height: 46,
+                    backgroundColor: "rgba(255,255,255,.08)",
+                    color: "#E9F400",
+                    fontSize: 26,
+                    flex: "0 0 auto",
+                  }}
+                >
+                  ⏫
+                </div>
+                <div>
+                  <div className="text-white fw-bold fs-5">
+                    Expande tu negocio
                   </div>
-                  <div>
-                    <div className="text-white fw-bold fs-5">
-                      Expande tu negocio
-                    </div>
-                    <div className="text-white-50 small">
-                      Mejora tu arcade con nuestras membresías
-                    </div>
+                  <div className="text-white-50 small">
+                    Mejora tu arcade con nuestras membresías
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="col-12 col-md-4">
-                <div className="d-flex gap-3 align-items-start">
-                  <div
-                    className="d-flex align-items-center justify-content-center rounded-3"
-                    style={{
-                      width: 46,
-                      height: 46,
-                      backgroundColor: "rgba(255,255,255,.08)",
-                      color: "#E9F400",
-                      fontSize: 26,
-                      flex: "0 0 auto",
-                    }}
-                  >
-                    🔖
-                  </div>
-                  <div>
-                    <div className="text-white fw-bold fs-5">
-                      Variedad amplia
-                    </div>
-                    <div className="text-white-50 small">
-                      Renta múltiples máquinas de nuestra selección
-                    </div>
+            <div className="col-12 col-md-4">
+              <div className="d-flex gap-3 align-items-start">
+                <div
+                  className="d-flex align-items-center justify-content-center rounded-3"
+                  style={{
+                    width: 46,
+                    height: 46,
+                    backgroundColor: "rgba(255,255,255,.08)",
+                    color: "#E9F400",
+                    fontSize: 26,
+                    flex: "0 0 auto",
+                  }}
+                >
+                  🔖
+                </div>
+                <div>
+                  <div className="text-white fw-bold fs-5">Variedad amplia</div>
+                  <div className="text-white-50 small">
+                    Renta múltiples máquinas de nuestra selección
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="col-12 col-md-4">
-                <div className="d-flex gap-3 align-items-start">
-                  <div
-                    className="d-flex align-items-center justify-content-center rounded-3"
-                    style={{
-                      width: 46,
-                      height: 46,
-                      backgroundColor: "rgba(255,255,255,.08)",
-                      color: "#E9F400",
-                      fontSize: 26,
-                      flex: "0 0 auto",
-                    }}
-                  >
-                    ⚙️
-                  </div>
-                  <div>
-                    <div className="text-white fw-bold fs-5">Mantenimiento</div>
-                    <div className="text-white-50 small">
-                      Reparación de cualquier gabinete sin costos extra
-                    </div>
+            <div className="col-12 col-md-4">
+              <div className="d-flex gap-3 align-items-start">
+                <div
+                  className="d-flex align-items-center justify-content-center rounded-3"
+                  style={{
+                    width: 46,
+                    height: 46,
+                    backgroundColor: "rgba(255,255,255,.08)",
+                    color: "#E9F400",
+                    fontSize: 26,
+                    flex: "0 0 auto",
+                  }}
+                >
+                  ⚙️
+                </div>
+                <div>
+                  <div className="text-white fw-bold fs-5">Mantenimiento</div>
+                  <div className="text-white-50 small">
+                    Reparación de cualquier gabinete sin costos extra
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Texto inferior */}
-          <div className="text-center mt-4">
-            <h2 className="fw-bold" style={{ color: "#E9F400" }}>
-              Tenemos el plan ideal para ti
-            </h2>
-          </div>
         </div>
-      </section>
+
+        {/* Texto inferior */}
+        <div className="text-center mt-4">
+          <h2 className="fw-bold" style={{ color: "#E9F400" }}>
+            Tenemos el plan ideal para ti
+          </h2>
+        </div>
+      </div>
+
+      {/* Cartas de beneficios */}
       <div className="container my-4">
         <div className="d-flex flex-column gap-4">
           {cards.map((c) => (

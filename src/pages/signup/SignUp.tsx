@@ -1,10 +1,12 @@
-import "./Login.css";
+import ExtLogIn from "../../components/utils/ExtLogIn";
+import "../signin/SignIn.css";
+import { Link } from "react-router-dom";
 
-function LoginPage() {
+function SignUnPage() {
   return (
     <div
-      className="container-fluid min-vh-100 d-flex align-items-center justify-content-center p-0"
-      style={{ backgroundColor: "#0C032F" }}
+      className="container-fluid min-vh-100 d-flex align-items-center justify-content-center p-0 my-4"
+      style={{ backgroundColor: "#0C062E" }}
     >
       <div className="container">
         <div className="row g-4 align-items-stretch">
@@ -20,14 +22,14 @@ function LoginPage() {
             </div>
 
             <h1 className="fw-bold mb-1" style={{ fontSize: "3rem" }}>
-              Log in
+              Registrate
             </h1>
             <p className="text-secondary mb-1">
-              Si no tienes una cuenta para ingresar
+              Si ya tienes una cuenta registrada
             </p>
-            <a href="#" className="text-info text-decoration-none mb-5">
-              Regístrate aquí
-            </a>
+            <Link to="/signin" className="text-info text-decoration-none mb-5">
+              Inicia sesión aquí
+            </Link>
 
             {/* CORREO */}
             <div className="mb-4">
@@ -38,11 +40,33 @@ function LoginPage() {
                 placeholder="Ingresa tu correo"
               />
             </div>
+            {/* Usuario */}
+            <div className="mb-4">
+              <label className="form-label text-white-50 mb-1">
+                Nombre de Usuario
+              </label>
+              <input
+                type="text"
+                className="form-control arcus-input"
+                placeholder="Ingresa tu nombre de perfil"
+              />
+            </div>
 
             {/* CONTRASEÑA */}
             <div className="mb-4">
               <label className="form-label text-white-50 mb-1">
                 Contraseña
+              </label>
+              <input
+                type="password"
+                className="form-control arcus-input"
+                placeholder="Ingresa la contraseña"
+              />
+            </div>
+            {/* CONFIRMACION DE CONTRASEÑA */}
+            <div className="mb-4">
+              <label className="form-label text-white-50 mb-1">
+                Confirma tu Contraseña
               </label>
               <input
                 type="password"
@@ -76,23 +100,9 @@ function LoginPage() {
               className="btn fw-bold w-100 py-3 mb-5 fs-4 rounded-pill border-0"
               style={{ backgroundColor: "#62FBD7", color: "#0C032F" }}
             >
-              Login
+              Registrarse
             </button>
-
-            <p className="text-secondary text-center w-100 mb-4 fs-6">
-              O continua con
-            </p>
-            <div className="d-flex justify-content-center w-100 gap-4 mb-3">
-              <button className="btn p-3 rounded-circle border-0 bg-transparent">
-                <span className="fs-1">🔵</span>
-              </button>
-              <button className="btn p-3 rounded-circle border-0 bg-transparent">
-                <span className="fs-1">⚪</span>
-              </button>
-              <button className="btn p-3 rounded-circle border-0 bg-transparent">
-                <span className="fs-1">🟢</span>
-              </button>
-            </div>
+            <ExtLogIn />
           </div>
 
           {/* Right Section */}
@@ -111,7 +121,7 @@ function LoginPage() {
                 className="fw-bold mb-0 text-white align-self-lg-start"
                 style={{ fontSize: "3rem" }}
               >
-                Ingresa
+                Registrate
               </h1>
               <p className="text-secondary fs-5 align-self-lg-start">
                 para poder realizar compras
@@ -124,4 +134,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default SignUnPage;

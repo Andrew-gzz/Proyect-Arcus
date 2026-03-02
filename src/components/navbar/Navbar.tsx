@@ -106,14 +106,14 @@ function Navbar() {
                   aria-labelledby="profileDropdown"
                 >
                   <li>
-                    <a className="dropdown-item" href="/login">
-                      Login
-                    </a>
+                    <Link className="dropdown-item" to="/signin">
+                      Iniciar sesión
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/signup">
-                      Sign up
-                    </a>
+                    <Link className="dropdown-item" to="/signup">
+                      Registrarse
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />

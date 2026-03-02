@@ -1,16 +1,19 @@
-import LoginPage from "./pages/login/Login";
+import SignInPage from "./pages/signin/SignIn";
 import Layout from "./components/Layout";
 import { Route, Routes } from "react-router-dom";
 import Card from "./components/Card";
 import Membership from "./components/membership/membership";
+import SignUnPage from "./pages/signup/SignUp";
 
 function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<SignInPage />} />
         <Route path="/card" element={<Card body={"Hola mundo"} />} />
         <Route path="/membership" element={<Membership />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignUnPage />} />
       </Route>
     </Routes>
   );
