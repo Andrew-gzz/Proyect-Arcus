@@ -79,11 +79,7 @@ export default function ProductGrid() {
                 <h6 className="mb-2 fw-bold">{product.name}</h6>
                 <p className="text-warning fw-bold mb-1">{product.price}</p>
                 <div className="text-secondary small mb-3">
-                  {"★★★★★".split("").map((s, i) => (
-                    <span key={i} className="me-1">
-                      ★
-                    </span>
-                  ))}
+                  <span className="me-1 text-primary ">☆ ☆ ☆ ☆ ☆</span>
                 </div>
 
                 {/* Botones de acción (Simulando el hover de tu imagen) */}
@@ -309,11 +305,7 @@ export function ProductGrid3() {
                 <h6 className="mb-2 fw-bold">{product.name}</h6>
                 <p className="text-warning fw-bold mb-1">{product.price}</p>
                 <div className="text-secondary small mb-3">
-                  {"★★★★★".split("").map((s, i) => (
-                    <span key={i} className="me-1">
-                      ★
-                    </span>
-                  ))}
+                  <span className="me-1 text-primary ">☆ ☆ ☆ ☆ ☆</span>
                 </div>
 
                 {/* Botones de acción (Simulando el hover de tu imagen) */}
