@@ -23,7 +23,7 @@ export default function Payment() {
             </Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/catalog" className="text-warning text-decoration-none">
+            <Link to="/payment" className="text-warning text-decoration-none">
               Pago
             </Link>
           </li>

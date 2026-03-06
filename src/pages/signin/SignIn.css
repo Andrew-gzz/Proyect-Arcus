@@ -1,7 +1,11 @@
+/* =========================================================
+   ARCUS - INPUT STYLE
+   ========================================================= */
+
 .arcus-input {
   background: transparent !important;
   border: 0 !important;
-  border-bottom: 1px solid #6c757d !important; /* línea gris */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important; /* línea gris */
   border-radius: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -11,11 +15,81 @@
 
 .arcus-input:focus {
   outline: none !important;
-  box-shadow: none !important; /* quita el glow azul de bootstrap */
-  border-bottom-color: #ffffff !important; /* línea un poco más clara al focus */
+  box-shadow: none !important;
+  border-bottom-color: rgb(252, 252, 252) !important;
 }
 
-.arcus-input::placeholder,
-.cola::placeholder {
-  color: #ffffff75 !important;
+.arcus-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* =========================================================
+   ARCUS - SELECT
+   ========================================================= */
+
+select.arcus-input {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+/* Cuando se abre el dropdown, estas reglas hacen que se vea oscuro y legible */
+select.arcus-input option {
+  background-color: #2b2f33; /* gris tipo toast */
+  color: #fff;
+}
+
+/* Placeholder del select */
+select.arcus-input option:disabled {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* =========================================================
+   ARCUS - FILE INPUT 
+   ========================================================= */
+
+input[type="file"].arcus-input {
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 0 !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+input[type="file"].arcus-input::file-selector-button {
+  background: transparent !important;
+  border: 0 !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  padding: 0 !important;
+  margin-right: 1rem !important;
+  box-shadow: none !important;
+  outline: none !important;
+  cursor: pointer;
+}
+
+input[type="file"].arcus-input::file-selector-button:hover,
+input[type="file"].arcus-input::file-selector-button:active,
+input[type="file"].arcus-input::file-selector-button:focus {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  box-shadow: none !important;
+  outline: none !important;
+  filter: none !important;
+}
+
+input[type="file"].arcus-input:hover,
+input[type="file"].arcus-input:active,
+input[type="file"].arcus-input:focus {
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* =========================================================
+   ARCUS - LABELS (opcional, para que se vean como tu prototipo)
+   ========================================================= */
+
+.form-label {
+  color: rgba(255, 255, 255, 0.55);
 }

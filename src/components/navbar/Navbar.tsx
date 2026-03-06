@@ -101,8 +101,8 @@ export default function Navbar() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/profile">
-                      Perfil
+                    <a className="dropdown-item" href="/admin">
+                      Tus productos
                     </a>
                   </li>
                   <li>

@@ -7,7 +7,8 @@ import Landing from "./pages/landing/Landing";
 import Catalog from "./pages/catalog/Catalog";
 import Product from "./pages/product/Product";
 import Cart from "./pages/cart/cart";
-import Payment from "./pages/payment/payment";
+import Payment from "./pages/payment/Payment";
+import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/admin" element={<Admin />} />
       </Route>
     </Routes>
   );

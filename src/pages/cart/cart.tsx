@@ -10,10 +10,7 @@ export default function Cart() {
   };
 
   return (
-    <div
-      className="min-vh-100 text-light pb-5"
-      style={{ backgroundColor: "#0b0819" }}
-    >
+    <div className="min-vh-100 text-light pb-5">
       {/* Breadcrumb*/}
       <nav className="container py-4" aria-label="breadcrumb">
         <ol className="breadcrumb mb-0">
@@ -186,12 +183,14 @@ export default function Cart() {
                   <span className="fw-bold">$ 23,20</span>
                 </div>
 
-                <button
-                  className="btn w-100 py-3 rounded-pill text-white fw-bold mt-3"
-                  style={{ backgroundColor: colors.btnProceed }}
-                >
-                  Proceder a la compra
-                </button>
+                <Link to="/payment">
+                  <button
+                    className="btn w-100 py-3 rounded-pill text-white fw-bold mt-3"
+                    style={{ backgroundColor: colors.btnProceed }}
+                  >
+                    Comprar
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
